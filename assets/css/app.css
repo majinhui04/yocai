@@ -1,0 +1,341 @@
+
+.paginatin-container {
+    background-color: #FFF;
+    padding: 20px;
+    text-align: right;
+}
+.pagination {
+
+}
+.pagination .active a {
+    background-color: #9acd44;
+    color: #FFF;
+}
+.pagination-item  {
+    display: inline-block;
+    vertical-align: top;
+    *display: inline;*zoom:1;
+}
+.pagination-item a {
+    padding: 3px 8px;
+    color: #999;
+    display: inline-block;
+    vertical-align: top;
+}
+.pagination-item a:hover {
+    text-decoration: underline;
+}
+.icon-share {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 3px;
+    width: 23px;
+    height: 25px;
+    background: url(../images/icon-share.png) no-repeat center center;
+}
+.yc {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    background-color: #e7e7e7;
+}
+.yc-bg {
+    background-color: #e7e7e7;
+}
+
+.yc-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #ddd;
+    color: #000;
+    margin: 0 7px;
+}
+.yc-module {
+    background-color: #FFF;
+}
+.yc-module-headline {
+    padding: 5px 0;
+}
+.yc-module-title1 {
+    background-color: #9acd44;
+}
+.yc-module-title {
+    display: inline-block;
+    padding-right:35px;
+    padding-left: 15px;
+    height: 34px;
+    line-height: 34px;
+    color: #FFF;
+    background: #9acd44 url(../images/headline-bg.jpg) no-repeat 100% 0;
+}
+.yc-inline-b {
+    display: inline-block;
+    vertical-align: top;
+}
+.yc-block {
+    display: block;
+}
+/* footer */
+.yc-footer {
+    border-top: 5px solid #acce20;
+    background-color: #FFF;
+    margin-top: 30px;
+    overflow: hidden;
+}
+.yc-footer .yc-wrapper {
+    position: relative;
+    padding: 30px 0;
+    background: url(../images/footer-logo.jpg) no-repeat 30px center;
+}
+.yc-footer-info {
+    width: 500px;
+    margin: 0 auto; 
+}
+.yc-footer-info dl {
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    line-height: 2;
+}
+.yc-footer-info dl.last {
+    width: 130px;
+}
+.yc-footer-info dl a{
+    color: #7f7f7f;
+}
+.yc-footer-info dt a{
+    color: #86510d;
+}
+.yc-footer .yc-qrcode {
+    position: absolute;
+    width: 80px;
+    top: 20px;
+}
+.yc-footer .yc-qrcode-title {
+    text-align: center;
+    line-height: 1.2;
+    color: #86510d;
+}
+.yc-footer .yc-qrcode-img {
+    display: block;
+    width: 100%;
+}
+.yc-footer .yc-qrcode-weibo {
+    right: 120px;
+}
+.yc-footer .yc-qrcode-weixin {
+    right: 0px;
+}
+/* 主页 */
+.yc-home-container {
+
+}
+.yc-wrapper {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* 顶部导航 */
+.yc-topnav {
+    background-color: #7bb255;
+    height: 30px;
+    line-height: 30px; 
+    overflow: hidden;
+    color: #FFF;
+}
+.yc-topnav-l {
+    float: left;
+}
+.yc-topnav-r {
+    float: right;
+}
+.yc-topnav .yc-link {
+    color: #FFF;
+    margin: 0 10px;
+}
+.yc-topnav .yc-link:hover {
+    text-decoration: underline;
+}
+.yc-topnav .yc-link:hover , .yc-topnav .yc-link:active {
+    color: #FFF;
+
+}
+.yc-link-usertips {
+    position: relative;
+    height: 100%;
+}
+.yc-link-usertips i {
+    display: block;
+    position: absolute;
+    right: -12px;
+    top:3px;
+    width: 10px;
+    height: 10px;
+    background: url(../images/icon-spot.png) no-repeat 0 0;
+}
+/* 头部菜单 */
+.yc-header {
+    border-bottom: 1px solid #ddd;
+    box-shadow: 3px 3px 3px #ddd;
+    background: #FFF url(../images/header-bg.jpg) no-repeat 0 0;
+}
+.yc-header .yc-wrapper{
+    position: relative;
+    height:100px;
+    /*background-color: red;*/
+}
+.yc-logo {
+    position: absolute;
+    width: 140px;
+    left: -10px;
+    top: 0;
+}
+.yc-logo-img {
+    width: 100%;
+}
+.yc-mainnav {
+    position: absolute;
+    bottom: 20px;
+    right: 100px;
+}
+.yc-mainnav-item {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 25px;
+    font-size: 14px;
+    color: #999;
+}
+.yc-mainnav a.cur {
+    color: #9dcd43;
+}
+
+.yc-main {
+    position: relative;
+    min-height: 200px;
+    margin-top: 60px;
+}
+.yc-main .yc-module {
+    margin-bottom: 7px;
+}
+/* 左边导航 */
+.yc-leftsidebar {
+    float: left;
+    width: 200px;
+    margin-right: 20px;
+}
+.yc-leftsidebar-userinfo {
+
+}
+.yc-userinfo-portrait {
+    text-align: center;
+    width: 120px;
+    min-height: 100px;
+    padding-top: 15px;
+}
+.yc-userinfo-portrait img {
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+}
+.yc-userinfo-name {
+    line-height: 2;
+    padding-top:30px;
+}
+.yc-userinfo-money {
+    text-align: center;
+    padding: 7px 0;
+}
+.yc-btn-deposit{
+    background-color: #9acd44;
+    color: #FFF;
+    display: inline-block;
+    padding: 3px 10px;
+    margin: 0 7px;
+}
+.yc-leftsidebar-menu {
+    min-height: 200px;
+    padding: 15px 0;
+}
+.yc-menu-list {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+}
+.yc-menu-headline {
+    font-size: 14px;
+    height: 30px;
+    line-height: 30px;
+
+}
+.yc-link-menu {
+    color: #ddd;
+    display: block;
+    text-indent: 20px;
+    color: #999;
+    padding: 5px 0;
+}
+.yc-leftsidebar-userinfo ,.yc-content-gardeninfo {
+    height: 150px;
+    overflow: hidden;
+}
+/* 中间内容 */
+.yc-content {
+    float: left;
+    width: 465px;
+    margin-right: 20px;
+}
+.yc-gardeninfo {
+    padding-left: 20px;
+    padding-top: 5px;
+    line-height: 1.5;
+}
+.yc-content-garden .garden-item {
+    padding: 15px 15px;
+    margin-bottom: 10px;
+    background-color: #FFF;
+}
+.yc-content-garden .garden-headline {
+    font-size: 14px;
+    line-height: 2;
+    font-weight: normal;
+}
+.yc-content-garden .garden-pics {
+    padding: 5px 0;
+}
+.yc-content-garden .garden-pic {
+    width: 140px;
+    height: 86px;
+    margin-right: 10px;
+    margin-bottom: 7px;
+}
+.yc-content-garden .garden-btn-share {
+    background-color: #FFF;
+}
+.yc-content-garden .garden-actions {
+    text-align: right;
+}
+
+
+.yc-rightsidebar {
+    float: right;
+    width: 190px;
+}
+.rank-list {
+    padding: 15px 12px;
+}
+.rank-item {
+    margin-bottom:10px;
+}
+.rank-avatar {
+    border-radius: 100%;
+    margin-right: 7px;
+}
+.rank-avatar ,.rank-title {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.yc-module-rank {
+
+}
