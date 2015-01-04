@@ -1,5 +1,7 @@
 /* app config */
 (function(){
+    var noop = function (){};
+    window.console = window.console || { log:noop,warn:noop };
     var dir = getRootPath();
     // 网站地址
     var url = dir + '/index.html';

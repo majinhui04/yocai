@@ -1,7 +1,9 @@
-
+.collapse {
+    display: none;
+}
 .paginatin-container {
     background-color: #FFF;
-    padding: 20px;
+    padding: 10px;
     text-align: right;
 }
 .pagination {
@@ -263,10 +265,26 @@
     margin: 0 auto;
 }
 .yc-menu-headline {
+    position: relative;
     font-size: 14px;
     height: 30px;
     line-height: 30px;
+    cursor: pointer;
 
+}
+.yc-menu-headline .icon-arrow {
+    display: block;
+    position: absolute;
+    width: 26px;
+    height: 17px;
+    right: 3px;
+    top: 5px;
+    background: url(../images/arrow-down.png) no-repeat center center;
+    background-size: 14px auto;
+}
+.aria-expanded i.icon-arrow {
+    background: url(../images/arrow-up.png) no-repeat center center;
+    background-size: 14px auto;
 }
 .yc-link-menu {
     color: #ddd;
@@ -281,8 +299,12 @@
 }
 /* 中间内容 */
 .yc-content {
+    width: 670px;
+    float: right;
+}
+.yc-content-garden {
     float: left;
-    width: 465px;
+    width: 470px;
     margin-right: 20px;
 }
 .yc-gardeninfo {
@@ -306,7 +328,7 @@
 .yc-content-garden .garden-pic {
     width: 140px;
     height: 86px;
-    margin-right: 10px;
+    margin-right: 1px;
     margin-bottom: 7px;
 }
 .yc-content-garden .garden-btn-share {
@@ -336,6 +358,52 @@
     vertical-align: middle;
 }
 
-.yc-module-rank {
 
+/* 消息中心 */
+.yc-message-content {
+    background-color: #FFF;
+}
+.yc-message-unread {
+    color: red;
+}
+.yc-message-list {
+    padding: 7px 15px;
+    font-size: 0;
+    letter-spacing: -3px;
+}
+.yc-message-item {
+    letter-spacing: normal;
+    font-size: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+}
+.yc-message-type {
+    text-align: center;
+    width: 10%;
+}
+.yc-message-title {
+    width: 53%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+.yc-message-status {
+    text-align: center;
+    width: 10%;
+}
+.yc-message-date {
+    width: 25%;
+    text-align: center;
+}
+.yc-message-detail .panel-body {
+    background-color: #f7f7f9;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+.yc-message-col {
+    overflow: hidden;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    vertical-align: top;
 }
