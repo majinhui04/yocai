@@ -11,7 +11,7 @@
 }
 .sb_dialog_layer_main{
     border: 1px solid #999;
-    box-shadow: 0 0 40px #535658;
+    /*box-shadow: 0 0 40px #535658;*/
     font-size: 14px;
     border-radius: 6px;
     overflow: hidden;

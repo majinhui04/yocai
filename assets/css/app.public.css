@@ -31,3 +31,46 @@ sub,sup {
 }
 *html .clearfix{height: 1%;}/*ie6*/
 *+html .clearfix{min-height: 1px;}/*ie7*/
+img {
+  border:0;
+}
+
+.share-container {
+  position: relative;
+}
+.share-list {
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
+}
+.share-item {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  width: 32%;
+  cursor: pointer;
+  color: #000;
+}
+.share-item-weixin {
+  z-index: 11;
+}
+.share-item-img {
+  display: block;
+  margin: 0 auto;
+  width: 70%;
+  border:0;
+}
+.share-item-title {
+  text-align: center;
+  line-height: 1.5;
+}
+/*.share-item-weixin:hover .share-weixin-qrcode {
+  display: block;
+}*/
+.share-weixin-qrcode {
+  display: none;
+  width: 185%;
+  position: absolute;
+  left: 0;
+  top: 0px;
+}
