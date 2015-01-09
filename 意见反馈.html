@@ -10,7 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>哟菜青年-消息中心</title> 
+    <title>意见反馈</title> 
     <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
     <link rel="icon" href="./assets/images/icon.jpg" />
     <link rel="stylesheet" href="./assets/css/app.public.css">
@@ -20,7 +20,7 @@
     <script src="./assets/js/app.config.js"></script>
     <script src="./assets/js/app.global.js"></script>
  </head> 
- <body class="yc yc-home-container"> 
+ <body class="yc yc-suggestion-container"> 
     <!-- 顶部导航 -->
     <div class="yc-topnav" > 
         <div class="yc-wrapper ">
@@ -244,71 +244,50 @@
         </div>
 
         <!-- 主体内容 -->
-        <div class="yc-content yc-message-content">
+        <div class="yc-content yc-suggestion-content">
             <div class="yc-module">
                 <div class="yc-module-headline">
                     <span class="yc-module-title">消息中心</span>
                 </div>
-
-                <div class="yc-message-list">
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m1">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了你的西红柿已经成熟了你的西红柿已经成熟了
-                        </span>
-                        <span class="yc-message-col yc-message-status yc-message-unread">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m1">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
-                            </div>
+                <div class="yc-form-container">
+                    <form action="" class="form-horizontal" role="form">
+                        <div class="form-group">
+                            <label class=" control-label">
+                                反馈内容:
+                                <span class="label-tips">必填*</span>
+                            </label>
+                            
+                            <textarea class="form-control" style="width:300px;" placeholder="意见或者建议"></textarea>
+                           
+                        </div>
+                        <div class="form-group">
+                            <label class=" control-label">图片说明:</label>
+                            <span class="btn-upload-pick">
+                                <input type="file" class="webuploader-element-invisible">
+                            </span>
+                        </div>
+                        <div class="form-group">
+                            <label class=" control-label">联系方式:</label>
+                            
+                            <input type="text" class="form-control " style="width:300px;" placeholder="留下您的QQ或者邮箱，方便我们联系您">
                             
                         </div>
-                    </div>
-
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m2">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了</span>
-                        <span class="yc-message-col yc-message-status">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m2">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
-                            </div>
+                        <div class="form-group">
+                            <label class=" control-label"> </label>
+                            <button class="yc-btn yc-btn-success">提交反馈</button>
+                            
                         </div>
-                    </div>
+                       
 
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m3">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了</span>
-                        <span class="yc-message-col yc-message-status">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m3">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
-                            </div>
-                        </div>
-                    </div>
 
+
+                    </form>
                 </div>
+
+                    
+                
             </div>
                 
-
-            <!-- 分页 -->
-            <div class="paginatin-container">
-                <ul class="pagination">
-                    <li class="pagination-item active"><a href="#" >1</a></li>
-                    <li class="pagination-item"><a href="#">2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">4</a></li>
-                    <li class="pagination-item"><a href="#">5</a></li>
-                </ul>
-            </div>
 
             
         </div>

@@ -1,32 +1,4 @@
-.collapse {
-    display: none;
-}
-.paginatin-container {
-    background-color: #FFF;
-    padding: 10px;
-    text-align: right;
-}
-.pagination {
 
-}
-.pagination .active a {
-    background-color: #9acd44;
-    color: #FFF;
-}
-.pagination-item  {
-    display: inline-block;
-    vertical-align: top;
-    *display: inline;*zoom:1;
-}
-.pagination-item a {
-    padding: 3px 8px;
-    color: #999;
-    display: inline-block;
-    vertical-align: top;
-}
-.pagination-item a:hover {
-    text-decoration: underline;
-}
 .icon-share {
     display: inline-block;
     vertical-align: middle;
@@ -45,185 +17,25 @@
     background-color: #e7e7e7;
 }
 
-.yc-btn {
-    display: inline-block;
-    padding: 5px 15px;
-    background-color: #ddd;
-    color: #000;
-    margin: 0 7px;
-}
-.yc-module {
-    background-color: #FFF;
-}
-.yc-module-headline {
-    padding: 5px 0;
-}
-.yc-module-title1 {
-    background-color: #9acd44;
-}
-.yc-module-title {
-    display: inline-block;
-    padding-right:35px;
-    padding-left: 15px;
-    height: 34px;
-    line-height: 34px;
-    color: #FFF;
-    background: #9acd44 url(../images/headline-bg.jpg) no-repeat 100% 0;
-}
-.yc-inline-b {
-    display: inline-block;
-    vertical-align: top;
-}
-.yc-block {
-    display: block;
-}
-/* footer */
-.yc-footer {
-    border-top: 5px solid #acce20;
-    background-color: #FFF;
-    margin-top: 30px;
-    overflow: hidden;
-}
-.yc-footer .yc-wrapper {
-    position: relative;
-    padding: 30px 0;
-    background: url(../images/footer-logo.jpg) no-repeat 30px center;
-}
-.yc-footer-info {
-    width: 500px;
-    margin: 0 auto; 
-}
-.yc-footer-info dl {
-    display: inline-block;
-    vertical-align: top;
-    width: 100px;
-    line-height: 2;
-}
-.yc-footer-info dl.last {
-    width: 130px;
-}
-.yc-footer-info dl a{
-    color: #7f7f7f;
-}
-.yc-footer-info dt a{
-    color: #86510d;
-}
-.yc-footer .yc-qrcode {
-    position: absolute;
-    width: 80px;
-    top: 20px;
-}
-.yc-footer .yc-qrcode-title {
-    text-align: center;
-    line-height: 1.2;
-    color: #86510d;
-}
-.yc-footer .yc-qrcode-img {
-    display: block;
-    width: 100%;
-}
-.yc-footer .yc-qrcode-weibo {
-    right: 120px;
-}
-.yc-footer .yc-qrcode-weixin {
-    right: 0px;
-}
+
+
 /* 主页 */
 .yc-home-container {
 
 }
-.yc-wrapper {
-    width: 900px;
-    margin: 0 auto;
-}
-
-/* 顶部导航 */
-.yc-topnav {
-    background-color: #7bb255;
-    height: 30px;
-    line-height: 30px; 
-    overflow: hidden;
-    color: #FFF;
-}
-.yc-topnav-l {
-    float: left;
-}
-.yc-topnav-r {
-    float: right;
-}
-.yc-topnav .yc-link {
-    color: #FFF;
-    margin: 0 10px;
-}
-.yc-topnav .yc-link:hover {
-    text-decoration: underline;
-}
-.yc-topnav .yc-link:hover , .yc-topnav .yc-link:active {
-    color: #FFF;
-
-}
-.yc-link-usertips {
-    position: relative;
-    height: 100%;
-}
-.yc-link-usertips i {
-    display: block;
-    position: absolute;
-    right: -12px;
-    top:3px;
-    width: 10px;
-    height: 10px;
-    background: url(../images/icon-spot.png) no-repeat 0 0;
-}
-/* 头部菜单 */
-.yc-header {
-    border-bottom: 1px solid #ddd;
-    box-shadow: 3px 3px 3px #ddd;
-    background: #FFF url(../images/header-bg.jpg) no-repeat 0 0;
-}
-.yc-header .yc-wrapper{
-    position: relative;
-    height:100px;
-    /*background-color: red;*/
-}
-.yc-logo {
-    position: absolute;
-    width: 140px;
-    left: -10px;
-    top: 0;
-}
-.yc-logo-img {
-    width: 100%;
-}
-.yc-mainnav {
-    position: absolute;
-    bottom: 20px;
-    right: 100px;
-}
-.yc-mainnav-item {
-    display: inline-block;
-    vertical-align: top;
-    margin: 0 25px;
-    font-size: 14px;
-    color: #999;
-}
-.yc-mainnav a.cur {
-    color: #9dcd43;
-}
-
 .yc-main {
     position: relative;
     min-height: 200px;
     margin-top: 60px;
 }
-.yc-main .yc-module {
-    margin-bottom: 7px;
+.yc-main-home .yc-module {
+    margin-bottom: 15px;
 }
 /* 左边导航 */
 .yc-leftsidebar {
     float: left;
     width: 200px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .yc-leftsidebar-userinfo {
 
@@ -299,13 +111,12 @@
 }
 /* 中间内容 */
 .yc-content {
-    width: 670px;
+    width: 740px;
     float: right;
 }
 .yc-content-garden {
     float: left;
-    width: 470px;
-    margin-right: 20px;
+    width: 550px;
 }
 .yc-gardeninfo {
     padding-left: 20px;
@@ -314,7 +125,7 @@
 }
 .yc-content-garden .garden-item {
     padding: 15px 15px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     background-color: #FFF;
 }
 .yc-content-garden .garden-headline {
@@ -406,4 +217,81 @@
     line-height: 30px;
     display: inline-block;
     vertical-align: top;
+}
+.yc-form-container {
+    margin:20px 15px;
+    padding-bottom:30px; 
+}
+.label-tips {
+    display: block;
+    color: red;
+}
+.btn-upload-pick {
+    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: url(../images/upload-bg.png) no-repeat 0 0;
+}
+
+
+
+/* 我的服务 */
+.yc-module-table {
+    margin: 15px 15px;
+}
+.yc-btn-search {
+    margin-left: 10px;
+}
+.yc-table-search label {
+    margin-right: 5px;
+}
+.yc-table-search  .form-group {
+    margin-right: 10px;
+}
+.yc-table-container {
+    margin: 5px 0;
+}
+.yc-table-search {
+    text-align: right;
+    margin-bottom: 15px;
+}
+.yc-table-search .form-group {
+    margin-bottom: 0;
+}
+/* 我的菜地 */
+.my-garden-content .yc-module {
+    margin-bottom: 15px;    
+}
+.my-garden-list {
+
+}
+.my-garden-item {
+    margin-bottom: 15px;
+    padding: 20px 0;
+    overflow: hidden;
+}
+.my-garden-pics {
+    width: 65%;
+    height: 150px;
+    overflow: hidden;
+    float: left;
+    padding-left: 20px;
+}
+.my-garden-pics img{
+    width: 220px;
+    height: 100%;
+    margin-right: 3px;
+}
+.my-garden-info {
+    width: 32%;
+    float: right;
+}
+.my-garden-info p {
+    line-height: 1.6;
+}
+.my-garden-actions {
+    margin:10px 0;
+    text-align: left;
 }

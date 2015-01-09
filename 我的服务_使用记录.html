@@ -10,7 +10,7 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>哟菜青年-消息中心</title> 
+    <title>使用记录</title> 
     <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
     <link rel="icon" href="./assets/images/icon.jpg" />
     <link rel="stylesheet" href="./assets/css/app.public.css">
@@ -20,7 +20,7 @@
     <script src="./assets/js/app.config.js"></script>
     <script src="./assets/js/app.global.js"></script>
  </head> 
- <body class="yc yc-home-container"> 
+ <body class="yc yc-service-container"> 
     <!-- 顶部导航 -->
     <div class="yc-topnav" > 
         <div class="yc-wrapper ">
@@ -244,71 +244,107 @@
         </div>
 
         <!-- 主体内容 -->
-        <div class="yc-content yc-message-content">
+        <div class="yc-content yc-service-content">
             <div class="yc-module">
                 <div class="yc-module-headline">
-                    <span class="yc-module-title">消息中心</span>
+                    <span class="yc-module-title">我的服务 &gt; 使用记录</span>
                 </div>
-
-                <div class="yc-message-list">
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m1">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了你的西红柿已经成熟了你的西红柿已经成熟了
-                        </span>
-                        <span class="yc-message-col yc-message-status yc-message-unread">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m1">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
+                
+                <!-- 表格数据 -->
+                <div class="yc-module-table">
+                    <div class="yc-table-search">
+                        <form class="form-inline" role="form">
+                            <div class="form-group">
+                                <label >服务状态:</label>
+                                <select class="" >
+                                    <option value="">请选择</option>
+                                    <option value="">测试</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label >菜品:</label>
+                                <select class="" >
+                                    <option value="">请选择</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label >服务项目:</label>
+                                <select class="" >
+                                    <option value="">请选择</option>
+                                </select>
                             </div>
                             
-                        </div>
+                            <button type="submit" class="yc-btn yc-btn-search">搜索</button>
+                        </form>
                     </div>
-
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m2">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了</span>
-                        <span class="yc-message-col yc-message-status">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m2">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
-                            </div>
-                        </div>
+                    <div class="yc-table-container">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>服务名称</th>
+                              <th>使用编号</th>
+                              <th>服务时间</th>
+                              <th>服务项目</th>
+                              <th>服务菜地</th>
+                              <th>服务面积</th>
+                              <th>服务技师</th>
+                              <th>服务状态</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>小白菜育种</td>
+                              <td>2010210231231</td>
+                              <td>2014-12-12</td>
+                              <td>育种育苗</td>
+                              <td>白菜</td>
+                              <td>10平米</td>
+                              <td>农场分配</td>
+                              <td>进行中</td>
+                            </tr>
+                            <tr>
+                              <td>小白菜育种</td>
+                              <td>2010210231231</td>
+                              <td>2014-12-12</td>
+                              <td>育种育苗</td>
+                              <td>白菜</td>
+                              <td>10平米</td>
+                              <td>农场分配</td>
+                              <td>进行中</td>
+                            </tr>
+                            <tr>
+                              <td>小白菜育种</td>
+                              <td>2010210231231</td>
+                              <td>2014-12-12</td>
+                              <td>育种育苗</td>
+                              <td>白菜</td>
+                              <td>10平米</td>
+                              <td>农场分配</td>
+                              <td>进行中</td>
+                            </tr>
+                            
+                          </tbody>
+                        </table>
                     </div>
-
-                    <div class="yc-message-item" data-toggle="collapse" data-href="m3">
-                        <span class="yc-message-col yc-message-type">系统通知</span>
-                        <span class="yc-message-col yc-message-title">你的西红柿已经成熟了</span>
-                        <span class="yc-message-col yc-message-status">未读</span>
-                        <span class="yc-message-col yc-message-date">
-                            2014-12-12 12:22:44
-                        </span>
-                        <div class="yc-message-detail collapse" id="m3">
-                            <div class="panel-body">
-                                您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。您于2015年2月14日 12:56:43  成功充值 1314.00 枚哟币，请注意保管好您的财产，感谢您对哟菜的支持哦。
-                            </div>
-                        </div>
-                    </div>
-
+                </div>
+                <!-- 分页 -->
+                <div class="paginatin-container">
+                    <ul class="pagination">
+                        <li class="pagination-item"><a href="#">首页</a></li>
+                        <li class="pagination-item"><a href="#">上一页</a></li>
+                        <li class="pagination-item active"><a href="#" >1</a></li>
+                        <li class="pagination-item"><a href="#">2</a></li>
+                        <li class="pagination-item"><a href="#">3</a></li>
+                        <li class="pagination-item"><a href="#">4</a></li>
+                        <li class="pagination-item"><a href="#">5</a></li>
+                        <li class="pagination-item"><a href="#">下一页</a></li>
+                        <li class="pagination-item"><a href="#">尾页</a></li>
+                    </ul>
                 </div>
             </div>
                 
 
-            <!-- 分页 -->
-            <div class="paginatin-container">
-                <ul class="pagination">
-                    <li class="pagination-item active"><a href="#" >1</a></li>
-                    <li class="pagination-item"><a href="#">2</a></li>
-                    <li class="pagination-item"><a href="#">3</a></li>
-                    <li class="pagination-item"><a href="#">4</a></li>
-                    <li class="pagination-item"><a href="#">5</a></li>
-                </ul>
-            </div>
+                
 
             
         </div>

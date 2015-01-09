@@ -28,7 +28,7 @@ foreach ($filesnames as $name) {
 $url="".$name;
 $count = substr_count($name,'html');
 if($count>0){
-    $aurl = "<p><a href=\"".$url."\">".$url."</a></p>";
+    $aurl = "<p><a href=\"".$url."\" target='_blank'>".$url."</a></p>";
     echo $aurl . "";
 }else {
 
