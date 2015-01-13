@@ -1,0 +1,49 @@
+.yc-wdck-container {}
+.yc-wdck-list {
+
+}
+.yc-wdck-item {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+.yc-wdck-poster {
+    margin-left: 15px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.yc-wdck-poster img {
+    width: 100%;
+    height: 100%;
+}
+.yc-wdck-info {
+    width: 190px;
+    position: relative;
+    margin-left: 17px;
+    display: inline-block;
+    vertical-align: top;
+}
+.yc-wdck-info p {
+    line-height: 1.6;
+}
+.yc-wdck-info .actions {
+    padding: 10px 0;
+}
+.yc-wdck-info .yc-number {
+    position: absolute;
+    right: 10px;
+    top:0px;
+}
+
+#eat-dialog .yc-form-container {
+    padding-bottom:0;
+}
+#eat-dialog .form-actions {
+    padding-top: 12px;
+    text-align: right;
+}

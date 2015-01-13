@@ -1,0 +1,32 @@
+.yc-wdfw-container {}
+.yc-wdfw-list {
+
+}
+.yc-wdfw-item {
+    width: 50%;
+    float: left;
+    margin-bottom: 15px;
+}
+.yc-wdfw-poster {
+    margin-left: 15px;
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+    display: inline-block;
+    vertical-align: top;
+}
+.yc-wdfw-poster img {
+    width: 100%;
+    height: 100%;
+}
+.yc-wdfw-info {
+    margin-left: 17px;
+    display: inline-block;
+    vertical-align: top;
+}
+.yc-wdfw-info p {
+    line-height: 1.6;
+}
+.yc-wdfw-info .actions {
+    padding: 15px 0;
+}

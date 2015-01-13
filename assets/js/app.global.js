@@ -80,4 +80,28 @@ $(function(){
 
     });
 
+
+    // 加减input
+    $(document).on('click','.count-btn-m',function(e){
+        var $target = $(e.currentTarget),
+            $parent = $target.closest('.count-container'),
+            $input = $parent.find('.count-input'),
+            value = parseInt( $input.val() ) || 0,
+            min ,max;
+
+        if(value===0) {
+            return;
+        }else if(value>0){
+            $input.val(--value);
+        }
+    });
+    $(document).on('click','.count-btn-p',function(e){
+        var $target = $(e.currentTarget),
+            $parent = $target.closest('.count-container'),
+            $input = $parent.find('.count-input'),
+            value = parseInt( $input.val() ) || 0;
+
+        $input.val(++value);
+    });
+
 });

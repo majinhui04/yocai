@@ -1,0 +1,46 @@
+.yc-apply-container {
+    
+}
+.yc-apply-list {
+    padding: 15px 0;
+}
+.yc-apply-item {
+    border-bottom: 1px dashed #ddd;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.yc-apply-box {
+    display: inline-block;
+    vertical-align: top;
+    width: 46%;
+    height: 110px;
+}
+.yc-apply-info {
+    position: relative;
+}
+.yc-apply-info p {
+    line-height: 1.6;
+    margin: 7px 0 0 10px;
+}
+.yc-apply-info img{
+    position: absolute;
+    right: 15px;
+    top:0px;
+    width: 150px;
+    height: 100px;
+}
+.yc-apply-note {
+    padding: 7px;
+}
+.yc-apply-status {
+    padding: 7px;
+}
+.apply-status-ing {
+    color: #4f9fcf;
+}
+.apply-status-success {
+    color: #7bb255;
+}
+.apply-status-fail {
+    color: red;
+}
