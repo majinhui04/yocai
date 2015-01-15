@@ -1,0 +1,25 @@
+.yc-recharge-container {}
+.yc-recharge-container .form-input {
+    margin-right: 5px;
+}
+.yc-recharge-container  .form-tips {
+    margin-left: 15px;
+}
+.yc-recharge-container .radio-list {
+    padding: 10px 0;
+}
+.yc-recharge-container .radio-list label{
+    margin-right: 10px;
+}
+.yc-recharge-container .radio-list input {
+    margin-right: 7px;
+}
+.yc-recharge-container .font-red {
+    color: red;
+}
+.form-group-right {
+    display: inline-block;
+}
+.yc-form-container .dialog-table td,.yc-form-container .dialog-table tr{
+    border: none;
+}

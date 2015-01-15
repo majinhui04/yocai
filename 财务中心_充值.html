@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-CN"> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum- scale=1.0, user-scalable=no" /> 
+    <!-- 这行代码可以指定网页使用 webkit 引擎渲染，当然，只对 360 浏览器 6.5+ 有效 -->
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>充值</title> 
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
+    <link rel="icon" href="./assets/images/icon.jpg" />
+    <link rel="stylesheet" href="./assets/css/app.public.css">
+    <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/app.cz.css">
+    <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="./assets/vendor/qaq/js/qaq.js"></script>
+    <script src="./assets/js/app.config.js"></script>
+    <script src="./assets/js/app.global.js"></script>
+ </head> 
+ <body class="yc yc-recharge-container"> 
+    <!-- 顶部导航 -->
+    <div class="yc-topnav" > 
+        <div class="yc-wrapper ">
+            <div class="yc-topnav-l">
+                <span>欢迎您,<a class="yc-link yc-link-user" href="javascript:;">马饭</a></span>
+                <a class="yc-link yc-inline-b yc-link-usertips" href="javascript:;">
+                    消息
+                    <i class="icon-spot"></i>
+                </a>
+                <a class="yc-link yc-link-logout" href="javascript:;">退出</a>
+            </div>
+            <div class="yc-topnav-r">
+                <a class="yc-link yc-link-basket" href="javascript:;">菜篓(1)</a>
+                <a class="yc-link yc-link-home" href="javascript:;">我的庄园</a>
+                <a class="yc-link" href="javascript:;">手机版</a>
+                <a class="yc-link" href="javascript:;">哟菜市场</a>
+                <a class="yc-link" href="javascript:;">线下门店</a>
+            </div>
+        </div>
+    </div> 
+    <!-- 顶部菜单 -->
+    <div class="yc-header">
+        <div class="yc-wrapper">
+            <div class="yc-logo">
+                <img src="./assets/images/logo.jpg" alt="" class="yc-logo-img">
+            </div>
+            <div class="yc-mainnav">
+                <a href="javascript:;" class="yc-mainnav-item cur" data-role="首页"><span>首页</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="菜园"><span>菜园</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="服务"><span>服务</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="集市"><span>集市</span></a>
+            </div>
+        </div>
+            
+    </div>
+    
+    <!-- 主体 -->
+    <div class="yc-main yc-wrapper clearfix">
+        <!-- 左侧导航 -->
+        <div class="yc-leftsidebar">
+            <div class="yc-module yc-leftsidebar-userinfo">
+                <div class="yc-inline-b yc-userinfo-portrait">
+                    <img src="./assets/data/avatar/1.jpeg" alt="">
+                </div>
+                <div class="yc-inline-b yc-userinfo-name">
+                    <p class="">马饭</p>
+                    <p class="">lv:88级</p>
+                </div>
+                <div class="yc-userinfo-money">
+                    <span>哟币: </span><span>88888</span> 
+                    <a href="javascript:;" class="yc-btn yc-btn-deposit">充值</a>
+                </div>
+
+            </div>
+
+            <div class="yc-module yc-leftsidebar-menu" id="menu">
+                <dl class="yc-menu-list" >
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的菜地</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">菜地</a>
+                            </dd>
+                        </div>
+                    </div>
+                    
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的服务</span>
+                        <i class="icon-arrow"></i>
+                        
+                    </dt>
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">拥有的服务</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">使用记录</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的仓库</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">仓库</a>
+                            </dd>
+                        </div>
+                    </div>
+                    
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的换菜</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">我发布的</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">我申请的</a>
+                            </dd>
+                        </div>
+                    </div>
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的预约</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+               
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">我的预约</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">申请预约</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">个人信息</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">个人资料</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">安全信息</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">我的收获地址</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                  
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">管理收获地址</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">物流信息</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">财务中心</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">充值</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">账簿</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+                <dl class="yc-menu-list">
+                    <dt class="yc-menu-headline" data-toggle="collapse">
+                        <i class="icon-menu"></i>
+                        <span class="yc-menu-title">消息中心</span>
+                        <i class="icon-arrow"></i>
+                    </dt>
+                    
+                    <div class="yc-submenu collapse"  data-role="content">
+                        <div class="panel-body">
+                            <dd class="yc-menu-item">
+                                <a href="javascript:;" class="yc-link-menu">系统通知</a>
+                            </dd>
+                            <dd>
+                                <a href="javascript:;" class="yc-link-menu">意见反馈</a>
+                            </dd>
+                        </div>
+                    </div>
+                            
+                </dl>
+
+            </div>
+
+        </div>
+
+        <!-- 主体内容 -->
+        <div class="yc-content ">
+            <div class="yc-module">
+                <div class="yc-module-headline">
+                    <span class="yc-module-title">充值中心</span>
+                </div>
+
+
+                <div class="yc-form-container">
+                    <form id="form1">
+                        <div class="form-group">
+                            <label class="form-label">充值账户</label>
+                            <span>134546464646</span>
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">充值额度</label>
+                            <span class="form-group-right">
+                                <input type="text" class="form-input" value="100" id="yb">哟币 
+                                <span class="form-tips">兑换比例    10 哟币=1 人民币</span>
+                                <div class="radio-list">
+                                    <label for="r1">
+                                        <input type="radio" name="r" id="r1" value="100">100元
+                                    </label>
+                                    <label for="r2">
+                                        <input type="radio" name="r" id="r2" value="50">50元
+                                    </label>
+                                    <label for="r3">
+                                        <input type="radio" name="r" id="r3" value="30">30元
+                                    </label>
+                                    <label for="r4">
+                                        <input type="radio" name="r" id="r4" value="10">10元
+                                    </label>
+                                </div>
+                            </span>
+                                
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="form-label">实付款</label>
+                            <span class="font-red">100</span>元
+                        </div>
+                        
+
+                        <div class="form-actions">
+                            <button class="yc-btn yc-btn-success" type="button" id="confirmBtn">确认支付</button>
+                        </div>
+                    
+
+                    </form>
+
+                </div>
+
+                
+                
+               
+            </div>
+                
+
+                
+
+            
+        </div>
+
+      
+
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="yc-footer">
+        <div class="yc-wrapper">
+            <div class="yc-footer-info">
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">关于</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">公司介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">商务合作</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">帮助中心</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">客服中心</a>
+                    </dd>
+                </dl>
+                <dl class="last">
+                    <dt>
+                        <a href="javascript:;" target="_blank">隐私权政策与使用条款</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">隐私权政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">使用条款</a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="yc-qrcode yc-qrcode-weibo">
+                <p class="yc-qrcode-title">官方微博</p>
+                <img src="./assets/images/qrcode-weibo.jpg" alt="">
+            </div>
+            <div class="yc-qrcode yc-qrcode-weixin">
+                <p class="yc-qrcode-title">官方微信</p>
+                <img src="./assets/images/qrcode-weixin.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- 发布模板 -->
+    <script type="text/template" id="rechange-tmpl">
+        <div class="yc-form-container">
+            <form>
+                <table class="table dialog-table">
+                  <tbody>
+                    <tr>
+                        <td><span>是否确认充值</span></td>
+                        <td><span id="value1" class="font-red"></span>哟币</td>
+                    </tr>
+                    <tr>
+                        <td><span>您将要支付现金</span></td>
+                        <td><span id="value2" class="font-red"></span>元</td>
+                    </tr>
+                    
+                  </tbody>
+                </table>
+                <div class="form-actions">
+                    <button class="yc-btn yc-btn-success yc-btn-add" type="button" id="submitBtn" >确定</button>
+                    <button class="yc-btn" type="button" data-role="close">取消</button>
+                </div>
+            </form>
+        </div>
+    </script>
+    <script>
+    $(function(){
+        // 换菜
+        var Dialog = null;
+        $(document).on('click','#confirmBtn',function(e){
+
+            e.preventDefault();
+            Dialog = new QAQ.Dialog({
+                id          : 'rechange-dialog',//选填dialog的id
+                title       : '确认充值',
+                contentSelector     : '#rechange-tmpl',
+             
+                width       : 320,//选填
+                modal       : false, //是否显示遮罩
+                drag        : false,//是否可拖拽
+                winResize   : false,//浏览器缩放时是否重新定位,
+
+                success:function(){
+                    var yb = $('#yb').val();
+                    var money = $('.radio-list input:checked').val();
+                    
+                    $('#value1').html(yb);
+                    $('#value2').html(money);
+                    
+                }
+            });
+
+
+            
+        });
+
+        // 表单提交
+        $(document).on('click','#submitBtn',function(e){
+            $('#form1')[0].submit();
+        });
+
+    });
+
+    </script>
+
+  </body>
+</html>

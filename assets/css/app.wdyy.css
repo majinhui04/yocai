@@ -1,0 +1,43 @@
+.yc-wdyy-list {
+    padding: 15px;
+}
+.yc-wdyy-item {
+    box-sizing:border-box;
+    height: 140px;
+    padding: 10px 15px;
+    display: inline-block;
+    vertical-align: top;
+    width: 30%;
+    *display: inline;
+    zoom:1;
+    border: 1px solid #ddd;
+    margin-left: 7px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+.yc-wdyy-item p {
+    line-height: 1.5;
+}
+.yc-wdyy-item .actions {
+    margin-top: 10px;
+    padding: 10px 0;
+    text-align: center;
+}
+.yc-wdyy-item .actions button {
+    width: 80%;
+}
+.font-gray {
+    color: gray;
+}
+.font-green {
+    color: green;
+}
+.yc-wdyy-item .yc-link-yy {
+    display: block;
+    cursor: pointer;
+    overflow: hidden;
+    text-indent: -99999px;
+    height: 100%;
+    background: url(../images/yy.jpg) no-repeat center center;
+}
+

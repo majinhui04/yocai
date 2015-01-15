@@ -1,0 +1,22 @@
+.yc-sqyy-container {
+
+}
+.yc-sqyy-container .form-group-right {
+    display: inline-block;
+    width: 520px;
+}
+.yc-sqyy-container .checkbox-list label{
+    display: inline-block;
+    vertical-align: top;
+    width: 100px;
+    margin-bottom: 7px;
+}
+.yc-sqyy-container .checkbox-list input {
+    margin: 0;
+    vertical-align: middle;
+    margin-right: 7px;
+
+}
+.yc-sqyy-container .font-green{
+    color: #9acd44;
+}
