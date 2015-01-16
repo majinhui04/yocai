@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="./assets/css/app.css" /> 
     <link rel="stylesheet" href="./assets/css/app.zb.css" /> 
     <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./assets/vendor/My97DatePicker/WdatePicker.js"></script>
     <script src="./assets/js/app.config.js"></script>
     <script src="./assets/js/app.global.js"></script>
  </head> 
@@ -267,16 +268,11 @@
                             </div>
                             <div class="form-group">
                                 <label >开始时间:</label>
-                                <select name="" id="startdate">
-                                    <option value="">2014-12</option>
-                                </select>
+                                <input class="Wdate" type="text" onclick="WdatePicker()">
                             </div>
                             <div class="form-group">
                                 <label >结束时间:</label>
-                                
-                                <select name="" id="enddate">
-                                    <option value="">2015-01</option>
-                                </select>
+                                <input class="Wdate" type="text" onclick="WdatePicker()">
                             </div>
                             <div class="form-group">
                                 <input type="text" placeholder="输入流水号">
