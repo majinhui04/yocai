@@ -10,21 +10,19 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>账簿</title> 
+    <title>物流信息</title> 
     <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
     <link rel="icon" href="./assets/images/icon.jpg" />
-    
     <link rel="stylesheet" href="./assets/css/app.public.css">
     <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
-    <link rel="stylesheet" href="./assets/css/app.css" /> 
-    <link rel="stylesheet" href="./assets/css/app.zb.css" /> 
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/app.wlxx.css" />  
     <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./assets/vendor/My97DatePicker/WdatePicker.js"></script>
+    <script src="./assets/vendor/My97DatePicker/WdatePicker.js"></script> 
     <script src="./assets/js/app.config.js"></script>
     <script src="./assets/js/app.global.js"></script>
  </head> 
- <body class="yc yc-account-container"> 
-    
+ <body class="yc my-garden-container"> 
     <!-- 顶部导航 -->
     <div class="yc-topnav" > 
         <div class="yc-wrapper ">
@@ -207,7 +205,7 @@
                 <dl class="yc-menu-list">
                     <dt class="yc-menu-headline" data-toggle="collapse">
                         <i class="icon-menu"></i>
-                        <span class="yc-menu-title">账簿</span>
+                        <span class="yc-menu-title">财务中心</span>
                         <i class="icon-arrow"></i>
                     </dt>
                     
@@ -248,100 +246,94 @@
         </div>
 
         <!-- 主体内容 -->
-        <div class="yc-content yc-service-content">
+        <div class="yc-content my-garden-content">
             <div class="yc-module">
                 <div class="yc-module-headline">
-                    <span class="yc-module-title">账簿</span>
-                </div>
-                
-                <!-- 表格数据 -->
-                <div class="yc-module-table">
-                    <div class="yc-table-search">
+                    <span class="yc-module-title">物流信息</span>
+                    <div class="yc-module-search">
                         <form class="form-inline" role="form">
-                            <div class="form-group">
-                                <label ></label>
-                                <select class="" >          
-                                    <option value="只看增加">只看增加</option>
-                                    <option value="只看减少">只看减少</option>
-                                    <option value="全部">全部</option>
-                                </select>
-                            </div>
                             <div class="form-group">
                                 <label >开始时间:</label>
                                 <input class="Wdate" type="text" onclick="WdatePicker()">
                             </div>
                             <div class="form-group">
                                 <label >结束时间:</label>
-                                <input class="Wdate" type="text" onclick="WdatePicker({doubleCalendar:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                                <input class="Wdate" type="text" onclick="WdatePicker()">
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="输入流水号">
+                                <select class="" >
+                                                                
+                                      <option value="全部">全部</option>
+                                      <option value="送货中">送货中</option>
+                                      <option value="未发货">未发货</option>
+                                      <option value="已发货">已发货</option>
+                                      <option value="已收到">已收到</option>
+        
+                                </select>
                             </div>
-                            
-                            <button type="submit" class="yc-btn yc-btn-search">搜索</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 菜地列表 -->
+            <div class="my-garden-list">
+                <div class="my-person-item yc-module clearfix">
+                    <div class="yc-table-search yc-table-search-left">
+                        <form class="form-inline" role="form">
+                            <input type="text" class="form-input" placeholder="输入货单号进行查询">
+                            <button type="submit" class="yc-btn yc-btn-search green-btn">搜索</button>
                         </form>
                     </div>
                     <div class="yc-table-container">
                         <table class="table table-striped">
                           <thead>
                             <tr>
-                              <th>流水编号</th>
-                              <th>流水时间</th>
-                              <th>说明</th>
-                              <th>哟币增量</th>
+                              <th>货单号</th>
+                              <th>备注</th>
+                              <th>发货时间</th>
+                              <th>状态</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-red">-10</span></td>
+                                <td>2010210231231</td>
+                                <td>收货收货收货收货收货收货收货收货收货</td>
+                                <td>2014-12-12</td>
+                                <td><span>收货中</span></td>
                             </tr>
                             <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-red">-10</span></td>
+                                <td>2010210231231</td>
+                                <td>收货收货收货收货收货收货收货收货收货</td>
+                                <td>2014-12-12</td>
+                                <td><span class="corRed">未发货</span></td>
                             </tr>
                             <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-green">+100</span></td>
+                                <td>2010210231231</td>
+                                <td>收货收货收货收货收货收货收货收货收货</td>
+                                <td>2014-12-12</td>
+                                <td><span class="corGreen">已送到</span></td>
                             </tr>
-                            
                           </tbody>
                         </table>
                     </div>
-                </div>
-                <!-- 分页 -->
-                <div class="paginatin-container">
-                    <ul class="pagination">
-                        <li class="pagination-item"><a href="#">首页</a></li>
-                        <li class="pagination-item"><a href="#">上一页</a></li>
-                        <li class="pagination-item active"><a href="#" >1</a></li>
-                        <li class="pagination-item"><a href="#">2</a></li>
-                        <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item"><a href="#">4</a></li>
-                        <li class="pagination-item"><a href="#">5</a></li>
-                        <li class="pagination-item"><a href="#">下一页</a></li>
-                        <li class="pagination-item"><a href="#">尾页</a></li>
-                    </ul>
+                    <!-- 分页 -->
+                    <div class="paginatin-container">
+                        <ul class="pagination">
+                            <li class="pagination-item"><a href="#">首页</a></li>
+                            <li class="pagination-item"><a href="#">上一页</a></li>
+                            <li class="pagination-item active"><a href="#" >1</a></li>
+                            <li class="pagination-item"><a href="#">2</a></li>
+                            <li class="pagination-item"><a href="#">3</a></li>
+                            <li class="pagination-item"><a href="#">4</a></li>
+                            <li class="pagination-item"><a href="#">5</a></li>
+                            <li class="pagination-item"><a href="#">下一页</a></li>
+                            <li class="pagination-item"><a href="#">尾页</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-                
-
-                
-
-            
         </div>
-
-      
-
     </div>
 
     <!-- 底部版权 -->
@@ -394,7 +386,7 @@
         </div>
 
     </div>
-    
+
 
   </body>
 </html>

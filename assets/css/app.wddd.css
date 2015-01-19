@@ -1,0 +1,15 @@
+/*-------确认订单-------*/
+.hander-row a{display: inline-block;color: #7b7b7b;margin-right: 30px;margin-bottom: 20px;}
+.hander-row .active{color: #000;}
+.order-content .date-row{text-align: right;}
+.order-content .date-row label{margin-left: 10px;}
+.order-content .hint-row{text-align: right;font-size: 12px;color: #757575;margin: 10px 0;}
+.address-list{margin-bottom: 20px;}
+.address-list .address-item{float: left;width: 260px;margin-right: 20px;border: 1px solid #dedede;background-color: #FFF;padding: 10px 0 10px 0;position: relative;}
+.address-list .address-item p{line-height: 20px;margin-bottom: 5px;color:#7b7b7b;margin-left: 20px;margin-right: 50px; }
+.address-list .address-item .update-row{text-align: right;margin-right: 20px;}
+.address-list .address-item .update-row a{color: #7b7b7b;}
+.address-list .address-icon{position: absolute;width: 23px;height: 23px;background: url(../images/address_icon.png) no-repeat;top: 10px;right: 10px;}
+.address-list .add-address{min-height: 128px;background: url(../images/add_bg.png) center no-repeat #FFF;width: 250px;}
+
+.returnMH-btn{float: right;color: #9acd44;font-size: 12px;}

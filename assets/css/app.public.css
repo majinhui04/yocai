@@ -20,6 +20,9 @@ ul,ol,li{list-style: none;}
 .fl {
   float: left;
 }
+.error {
+  color: red;
+}
 .highlight {
   padding: 9px 14px;
   margin-top: 7px;

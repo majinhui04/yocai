@@ -1,0 +1,39 @@
+/*--------菜地详细----------*/
+.yc-column{float: none;width: 100%;}
+.my-garden-detail{background-color: #fafafa;overflow: hidden;}
+.my-garden-detail .my-garden-item{margin-bottom: 0;padding-bottom: 0;padding-left: 20px;}
+.my-garden-detail .my-garden-pics{margin-right: 30px;width: 128px;padding-left: 0;}
+.my-garden-detail .my-garden-pics img{width: 100%;height: 128px;}
+.my-garden-detail .my-garden-info{float: left;margin-right: 30px;}
+.my-garden-detail .my-garden-info h4{font-size: 16px;}
+.my-garden-detail .update-btn{font-size: 12px;color: #757575;}
+.my-garden-detail .pz,.my-garden-detail .zt{display: inline-block;font-size: 14px;color: #5c5c5c;margin:10px 20px 10px 0;}
+.my-garden-info2 {float: left;width: 45%;}
+.my-garden-info2 p{float: left;width: 50%;font-size: 12px;margin-bottom: 5px;text-indent:10px;}
+.my-garden-info2 .date-row{margin-bottom: 10px;background-color: #cbc9c9;}
+
+.my-garden-pic-list .left-box{float: left;width: 128px;border-right:3px solid #e6e6e6;margin-left: 20px;margin-bottom:-100000px;padding-bottom:100000px;}
+.my-garden-pic-list .left-box h4{font-size: 14px;color: #93d057;}
+.my-garden-pic-list .left-box p{line-height: 30px;padding-left: 10px;}
+.my-garden-pic-list .left-box .line-icon{display: inline-block;width: 3px;height: 12px;background-color: #93d057;margin-right: 10px;}
+.my-garden-pic-list .right-box{float: right;width: 785px;}
+
+.photo-box{position: relative;float: left;}
+.photo-box a{display: block;}
+.photo-box .photo-box-content{background-color: #FFF;border-radius: 4px;padding: 10px;padding-bottom: 30px;margin:20px 15px 20px 0;width: 336px;box-shadow:3px 3px 3px #ddd;}
+.photo-box .round{position: absolute;width: 20px;height: 20px;top: 34px;left:-37px;background: url(../images/round-icon.png) center no-repeat;background-size: 18px;}
+.photo-box .book-name{margin-bottom: 25px;}
+.photo-box .books-list{overflow: hidden;}
+.photo-box h4{color: #000;font-size: 16px;font-weight: normal;}
+.photo-box strong{color: #7bb054;font-weight: normal;font-size: 18px;}
+.photo-box .new-des{font-size: 14px;}
+.photo-box .bookbarImg-list{overflow: hidden;margin-top: 5px;}
+.photo-box .pic{padding-right:5px;margin-top: 20px;}
+.photo-box .pic img{width: 100%;}
+.photo-box .source{font-size: 12px;margin-top: 5px;}
+.photo-box .info-icon{position: absolute;left:-110px;top: 28px;height: 27px;width: 75px;background: url(../images/infor-icon.png) no-repeat;line-height: 27px;color: #FFF;text-indent: 10px;}
+/*.photo-box .pointer{border: 10px solid transparent;border-right: 10px solid #FFF;width: 0;height: 0;position: absolute;content: ' ';bottom: 50%;left:-20px;box-shadow:0px 0px 0px #ddd;}*/
+.photo-box .pointer{background: url(../images/jt_icon.png) center no-repeat;position: absolute;left:-18px;top: 30px;height: 26px;width: 17px;}
+.photo-list-item .line-row{border-top: 3px dashed #97d25a;display: inline-block;width: 60px;float: left;margin-top: 50px;margin-left: -12px;}
+.photo-list-item .big-photo-box{float: left;width: 230px;background-color: #FFF;border-radius: 6px;box-shadow:3px 3px 3px #ddd;padding: 10px;margin-top: 30px;}
+.photo-list-item .big-photo-box img{width: 100%;}

@@ -1,0 +1,41 @@
+.person-head {padding-bottom: 20px;}
+.person-head .icon-arrow{
+    display: block;
+    float: right;
+    width: 26px;
+    height: 17px;
+    background: url(../images/arrow-down.png) no-repeat center center;
+    background-size: 14px auto;
+}
+
+.person-content{padding-left: 55px;}
+
+.person-photo{width: 200px;}
+.person-photo img{
+    width: 158px;
+    height: 158px;
+    -moz-box-shadow:10px 10px 10px #999 inset;              
+    -webkit-box-shadow:10px 10px 10px #999 inset;           
+    box-shadow:10px 10px 10px #999 inset; 
+ }
+
+.person-photo-btn{position: relative;}
+.person-photo-btn img{width: 123px;height: 123px;margin-top: 20px;}
+.person-photo-btn input[type="file"]{height: 100%;}
+.person-photo-hint{display: inline-block;margin-top: 70px;margin-left: 20px;}
+.person-photo-hint p{color: #858585;}
+.person-content .form-group{margin-left: -35px;}
+
+.person-content input[type="text"],.person-content textarea{width: 250px;}
+
+.form-radio-label{width: 50px;display: inline-block;margin-left: 5px;color: #858585;}
+
+.input-hint{color: #858585;margin-left: 120px;font-size: 12px;line-height: 30px;}
+.input-hint-inine{display: inline-block;margin-left: 0;}
+.btn-rc{float: right;}
+.edit-btn{color: #578e33;margin-left: 20px;}
+.corRed{color: #fc4605;}
+.corGreen{color: #9acd44;}
+
+.my-person-item{padding:20px 30px;overflow: hidden;}
+.my-person-item label{text-align: left;}

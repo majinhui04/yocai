@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-CN"> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum- scale=1.0, user-scalable=no" /> 
+    <!-- 这行代码可以指定网页使用 webkit 引擎渲染，当然，只对 360 浏览器 6.5+ 有效 -->
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>我的菜篓</title> 
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
+    <link rel="icon" href="./assets/images/icon.jpg" />
+    <link rel="stylesheet" href="./assets/css/app.public.css">
+    <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/app.wdcl.css" />  
+    <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="./assets/vendor/qaq/js/qaq.js"></script>
+    <script src="./assets/js/app.config.js"></script>
+    <script src="./assets/js/app.global.js"></script>
+ </head> 
+ <body class="yc my-garden-container"> 
+    <!-- 顶部导航 -->
+    <div class="yc-topnav" > 
+        <div class="yc-wrapper ">
+            <div class="yc-topnav-l">
+                <span>欢迎您,<a class="yc-link yc-link-user" href="javascript:;">马饭</a></span>
+                <a class="yc-link yc-inline-b yc-link-usertips" href="javascript:;">
+                    消息
+                    <i class="icon-spot"></i>
+                </a>
+                <a class="yc-link yc-link-logout" href="javascript:;">退出</a>
+            </div>
+            <div class="yc-topnav-r">
+                <a class="yc-link yc-link-basket" href="javascript:;">菜篓(1)</a>
+                <a class="yc-link yc-link-home" href="javascript:;">我的庄园</a>
+                <a class="yc-link" href="javascript:;">手机版</a>
+                <a class="yc-link" href="javascript:;">哟菜市场</a>
+                <a class="yc-link" href="javascript:;">线下门店</a>
+            </div>
+        </div>
+    </div> 
+    <!-- 顶部菜单 -->
+    <div class="yc-header">
+        <div class="yc-wrapper">
+            <div class="yc-logo">
+                <img src="./assets/images/logo.jpg" alt="" class="yc-logo-img">
+            </div>
+            <div class="yc-mainnav">
+                <a href="javascript:;" class="yc-mainnav-item cur" data-role="首页"><span>首页</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="菜园"><span>菜园</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="服务"><span>服务</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="集市"><span>集市</span></a>
+            </div>
+        </div>
+            
+    </div>
+    
+    <!-- 主体 -->
+    <div class="yc-main yc-wrapper clearfix">
+        <!-- 主体内容 -->
+        <div class="yc-content my-garden-content yc-column">
+            <div class="yc-module">
+                <div class="yc-module-headline">
+                    <span class="yc-module-title">我的菜篓</span>
+                </div>
+            </div>
+
+            <!-- 菜地列表 -->
+            <div class="my-garden-list">
+                <div class="my-person-item yc-module clearfix">
+                    <div class="yc-table-container">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th><input type="checkbox" id="chkall"/>全选</th>
+                              <th>品种</th>
+                              <th>数量</th>
+                              <th>说明</th>
+                              <th>操作</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            
+                            <tr>
+                                <td><input type="checkbox" class="table-ckbox" name="c"/><span class="table-pic"><img src="assets/data/garden1.jpg" alt=""></span></td>
+                                <td>红菜台</td>
+                                <td>
+                                    <span class="count-container" role="count" data-min="" data-max="">
+                                        <a href="javascript:;" class="count-btn count-btn-m">-</a>
+                                        <input type="text" class="count-input" value="0">
+                                        <a href="javascript:;" class="count-btn count-btn-p" role="">+</a>
+                                    </span>
+                                </td>
+                                <td>事实上事实上事实上事实上事实上身上</td>
+                                <td><a href="javascript:;" class="confirm">删除</a></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" class="table-ckbox" name="c" /><span class="table-pic"><img src="assets/data/garden1.jpg" alt=""></span></td>
+                                <td>红菜台</td>
+                                <td>
+                                    <span class="count-container" role="count" data-min="" data-max="">
+                                        <a href="javascript:;" class="count-btn count-btn-m">-</a>
+                                        <input type="text" class="count-input" value="0">
+                                        <a href="javascript:;" class="count-btn count-btn-p" role="">+</a>
+                                    </span>
+                                </td>
+                                <td>事实上事实上事实上事实上事实上身上</td>
+                                <td><a href="javascript:;" class="confirm">删除</a></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                </div>
+                <p class="my-count"><span>运费：<i>5</i>元</span>支付哟币：<i class="total">5.00</i>元</p>
+                <form id="exchangeForm">
+                    <div class="form-actions">
+                        <button class="yc-btn yc-btn-success btn-rc" type="button" id="exchangeBtn">提交订单</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="yc-footer">
+        <div class="yc-wrapper">
+            <div class="yc-footer-info">
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">关于</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">公司介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">商务合作</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">帮助中心</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">客服中心</a>
+                    </dd>
+                </dl>
+                <dl class="last">
+                    <dt>
+                        <a href="javascript:;" target="_blank">隐私权政策与使用条款</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">隐私权政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">使用条款</a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="yc-qrcode yc-qrcode-weibo">
+                <p class="yc-qrcode-title">官方微博</p>
+                <img src="./assets/images/qrcode-weibo.jpg" alt="">
+            </div>
+            <div class="yc-qrcode yc-qrcode-weixin">
+                <p class="yc-qrcode-title">官方微信</p>
+                <img src="./assets/images/qrcode-weixin.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    
+    <script>
+    $(function(){
+        $(document).on('click','#chkall',function(){
+            var checked = $('#chkall')[0].checked;
+            
+            $('.table-ckbox').each(function(_,item){
+                this.checked = true;
+            });
+            if(checked) {
+                $('.table-ckbox').each(function(_,item){
+                    this.checked = true;
+                });
+            }else {
+                $('.table-ckbox').each(function(_,item){
+                    this.checked = false;
+                });
+            }
+            
+        });
+        $(document).on('click','.confirm',function(){
+            QAQ.Dialog.confirm('是否删除?',function(){
+                alert('删除成功');
+            },function(){
+
+            });
+        });
+    });
+    </script>
+
+  </body>
+</html>

@@ -10,21 +10,19 @@
     <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
     <meta http-equiv="Pragma" content="no-cache" />
     <meta http-equiv="Expires" content="0" />
-    <title>账簿</title> 
+    <title>个人资料</title> 
     <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
     <link rel="icon" href="./assets/images/icon.jpg" />
-    
     <link rel="stylesheet" href="./assets/css/app.public.css">
     <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
-    <link rel="stylesheet" href="./assets/css/app.css" /> 
-    <link rel="stylesheet" href="./assets/css/app.zb.css" /> 
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/app.person.css" />
     <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script>
-    <script src="./assets/vendor/My97DatePicker/WdatePicker.js"></script>
+    <script src="./assets/vendor/qaq/js/qaq.js"></script>
     <script src="./assets/js/app.config.js"></script>
     <script src="./assets/js/app.global.js"></script>
  </head> 
- <body class="yc yc-account-container"> 
-    
+ <body class="yc my-garden-container"> 
     <!-- 顶部导航 -->
     <div class="yc-topnav" > 
         <div class="yc-wrapper ">
@@ -207,7 +205,7 @@
                 <dl class="yc-menu-list">
                     <dt class="yc-menu-headline" data-toggle="collapse">
                         <i class="icon-menu"></i>
-                        <span class="yc-menu-title">账簿</span>
+                        <span class="yc-menu-title">财务中心</span>
                         <i class="icon-arrow"></i>
                     </dt>
                     
@@ -248,100 +246,66 @@
         </div>
 
         <!-- 主体内容 -->
-        <div class="yc-content yc-service-content">
+        <div class="yc-content my-garden-content">
             <div class="yc-module">
                 <div class="yc-module-headline">
-                    <span class="yc-module-title">账簿</span>
+                    <span class="yc-module-title">个人信息</span>
                 </div>
                 
-                <!-- 表格数据 -->
-                <div class="yc-module-table">
-                    <div class="yc-table-search">
-                        <form class="form-inline" role="form">
+            </div>
+
+            <!-- 菜地列表 -->
+            <div class="my-garden-list">
+                <div class="my-person-item yc-module clearfix">
+                    <h4 class="person-head aria-expanded" data-toggle="collapse">头像 <i class="icon-arrow"></i></h4>
+                    <div class="person-content collapse" data-role="content" style="display: block;">
+                        <div class="yc-inline-b yc-userinfo-portrait person-photo ">
+                            <img src="./assets/data/avatar/1.jpeg" alt="个人头像">
+                            <p>当前头像</p>
+                        </div>
+                        <div class="yc-inline-b yc-userinfo-portrait person-photo-btn ">
+                            <img src="./assets/images/parson-upload.png" alt="">
+                            <input type="file" class="webuploader-element-invisible">
+                        </div>
+                        <div class="person-photo-hint">上传头像<p>支持jpg格式，不能大于512K</p></div>
+                    </div>
+                </div>
+
+                <div class="my-person-item yc-module clearfix">
+                    <h4 class="person-head aria-expanded" data-toggle="collapse">个人信息 <i class="icon-arrow"></i></h4>
+                    <div class="person-content collapse" data-role="content" style="display: block;">
+                        <form id="exchangeForm">
                             <div class="form-group">
-                                <label ></label>
-                                <select class="" >          
-                                    <option value="只看增加">只看增加</option>
-                                    <option value="只看减少">只看减少</option>
-                                    <option value="全部">全部</option>
-                                </select>
+                                <label class="form-label">昵称</label>
+                                <input type="text" class="form-input" name="person-name">
+                                <a href="javascript:;" id="confirmBtn" class="edit-btn corRed">修改昵称</a>
+                                <div class="input-hint input-hint-inine">修改昵称需要消耗哟币</div>
                             </div>
                             <div class="form-group">
-                                <label >开始时间:</label>
-                                <input class="Wdate" type="text" onclick="WdatePicker()">
+                                <label class="form-label">哟菜号</label>
+                                <input type="text" class="form-input" name="person-name">
                             </div>
                             <div class="form-group">
-                                <label >结束时间:</label>
-                                <input class="Wdate" type="text" onclick="WdatePicker({doubleCalendar:true,dateFmt:'yyyy-MM-dd HH:mm:ss'})">
+                                <label class="form-label">性别</label>
+                                <input type="radio" class="form-radio" id="man" name="sex"><label for="man" class="form-radio-label">男</label>
+                                <input type="radio" class="form-radio" id="woman" name="sex"><label for="woman" class="form-radio-label">女</label>
                             </div>
                             <div class="form-group">
-                                <input type="text" placeholder="输入流水号">
+                                <label class="form-label">生日</label>
+                                <input type="text" class="form-input" name="person-date">
                             </div>
-                            
-                            <button type="submit" class="yc-btn yc-btn-search">搜索</button>
+                            <div class="form-group">
+                                <label class="form-label">个性签名</label>
+                                <textarea class="form-textarea" name="person-sign"></textarea>
+                            </div>
+                            <div class="form-actions">
+                                <button class="yc-btn yc-btn-success btn-rc" type="button" id="exchangeBtn">保存</button>
+                            </div>
                         </form>
                     </div>
-                    <div class="yc-table-container">
-                        <table class="table table-striped">
-                          <thead>
-                            <tr>
-                              <th>流水编号</th>
-                              <th>流水时间</th>
-                              <th>说明</th>
-                              <th>哟币增量</th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-red">-10</span></td>
-                            </tr>
-                            <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-red">-10</span></td>
-                            </tr>
-                            <tr>
-                              <td>2010210231231</td>
-                              <td>2015-05-12  09:24</td>
-                              <td>2014-12-12</td>
-                              <td>小白菜育种育苗服务  × 5</td>
-                              <td><span class="font-green">+100</span></td>
-                            </tr>
-                            
-                          </tbody>
-                        </table>
-                    </div>
-                </div>
-                <!-- 分页 -->
-                <div class="paginatin-container">
-                    <ul class="pagination">
-                        <li class="pagination-item"><a href="#">首页</a></li>
-                        <li class="pagination-item"><a href="#">上一页</a></li>
-                        <li class="pagination-item active"><a href="#" >1</a></li>
-                        <li class="pagination-item"><a href="#">2</a></li>
-                        <li class="pagination-item"><a href="#">3</a></li>
-                        <li class="pagination-item"><a href="#">4</a></li>
-                        <li class="pagination-item"><a href="#">5</a></li>
-                        <li class="pagination-item"><a href="#">下一页</a></li>
-                        <li class="pagination-item"><a href="#">尾页</a></li>
-                    </ul>
                 </div>
             </div>
-                
-
-                
-
-            
         </div>
-
-      
-
     </div>
 
     <!-- 底部版权 -->
@@ -394,7 +358,53 @@
         </div>
 
     </div>
-    
+    <!-- 模板 -->
+    <script type="text/template" id="tmpl">
+        <div class="yc-form-container">
+            <form>
+            <div style="margin:10px;"><input type="text" ></div>
+                <div class="form-actions">
+                    <button class="yc-btn yc-btn-success yc-btn-add" type="button" data-role="close" id="submitBtn" >确定</button>
+                    <button class="yc-btn" type="button" data-role="close">取消</button>
+                </div>
+            </form>
+        </div>
+    </script>
+    <script>
+    $(function(){
+        // 换菜
+        var Dialog = null;
+        $(document).on('click','#confirmBtn',function(e){
+
+            e.preventDefault();
+            Dialog = new QAQ.Dialog({
+                id          : 'dialog1',//选填dialog的id
+                title       : '昵称修改',
+                contentSelector     : '#tmpl',
+             
+                width       : 320,//选填
+                modal       : false, //是否显示遮罩
+                drag        : false,//是否可拖拽
+                winResize   : false,//浏览器缩放时是否重新定位,
+
+                success:function(){
+                    
+                    
+                }
+            });
+
+
+            
+        });
+
+        // 昵称提交
+        $(document).on('click','#submitBtn',function(e){
+            
+        });
+
+    });
+
+    </script>
 
   </body>
 </html>

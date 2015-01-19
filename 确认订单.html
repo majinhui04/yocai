@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-CN"> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum- scale=1.0, user-scalable=no" /> 
+    <!-- 这行代码可以指定网页使用 webkit 引擎渲染，当然，只对 360 浏览器 6.5+ 有效 -->
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>确认订单</title> 
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
+    <link rel="icon" href="./assets/images/icon.jpg" />
+    <link rel="stylesheet" href="./assets/css/app.public.css">
+    <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
+    <link rel="stylesheet" href="./assets/css/app.css" />
+    <link rel="stylesheet" href="./assets/css/app.qrdd.css" />  
+    <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script>
+    <script src="./assets/vendor/My97DatePicker/WdatePicker.js"></script>
+    <script src="./assets/vendor/qaq/js/qaq.js"></script>
+    <script src="./assets/js/app.geo.js"></script>
+    <script src="./assets/js/app.config.js"></script>
+    <script src="./assets/js/app.global.js"></script>
+ </head> 
+ <body class="yc my-garden-container"> 
+    <!-- 顶部导航 -->
+    <div class="yc-topnav" > 
+        <div class="yc-wrapper ">
+            <div class="yc-topnav-l">
+                <span>欢迎您,<a class="yc-link yc-link-user" href="javascript:;">马饭</a></span>
+                <a class="yc-link yc-inline-b yc-link-usertips" href="javascript:;">
+                    消息
+                    <i class="icon-spot"></i>
+                </a>
+                <a class="yc-link yc-link-logout" href="javascript:;">退出</a>
+            </div>
+            <div class="yc-topnav-r">
+                <a class="yc-link yc-link-basket" href="javascript:;">菜篓(1)</a>
+                <a class="yc-link yc-link-home" href="javascript:;">我的庄园</a>
+                <a class="yc-link" href="javascript:;">手机版</a>
+                <a class="yc-link" href="javascript:;">哟菜市场</a>
+                <a class="yc-link" href="javascript:;">线下门店</a>
+            </div>
+        </div>
+    </div> 
+    <!-- 顶部菜单 -->
+    <div class="yc-header">
+        <div class="yc-wrapper">
+            <div class="yc-logo">
+                <img src="./assets/images/logo.jpg" alt="" class="yc-logo-img">
+            </div>
+            <div class="yc-mainnav">
+                <a href="javascript:;" class="yc-mainnav-item cur" data-role="首页"><span>首页</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="菜园"><span>菜园</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="服务"><span>服务</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="集市"><span>集市</span></a>
+            </div>
+        </div>
+            
+    </div>
+    
+    <!-- 主体 -->
+    <div class="yc-main yc-wrapper clearfix">
+        <!-- 主体内容 -->
+        <div class="yc-content my-garden-content yc-column">
+            <div class="yc-module">
+                <div class="yc-module-headline">
+                    <span class="yc-module-title">确认订单</span>
+                </div>
+            </div>
+
+            <!-- 菜地列表 -->
+            <div class="my-garden-list">
+                <div class="order-content clearfix">
+                    <div class="hander-row"><a href="javascript:;" class="active">确认收货地址</a><a href="javascript:;">管理收货地址</a><a href="javascript:;">展开全部收货地址</a><a href="javascript:;">返回菜篓</a></div>
+                    <ul class="address-list clearfix">
+                        <li class="address-item">
+                            <p><span class="person-name">马德富</span><span class="tel">13666666666</span></p>
+                            <p>武汉市马湖村新佳乐五福小区红桃超市对面1-12号</p>
+                            <p class="update-row"><a href="javascript:;" class="edit-btn" data-tel="13666666666" data-name="马德富" data-province="湖北省" data-city="武汉" data-detailaddress="新佳乐五福小区红桃超市对面1-12号">修改地址</a></p>
+                            <span class="address-icon"></span>
+                        </li>
+                        <li class="address-item">
+                            <p><span class="person-name">马德富</span><span class="tel">13666666666</span></p>
+                            <p>武汉市马湖村新佳乐五福小区红桃超市对面1-12号</p>
+                            <p class="update-row"><a href="javascript:;" class="edit-btn" data-tel="13666666666" data-name="马德富" data-province="湖北省" data-city="武汉" data-detailaddress="新佳乐五福小区红桃超市对面1-12号">修改地址</a></p>
+                            
+                        </li>
+                        <li class="add-address address-item" id="add-address-btn"></li>
+                    </ul>
+                    <h4>确认订单</h4>
+                    <div class="yc-table-container yc-module my-person-item">
+                        <table class="table table-striped">
+                          <thead>
+                            <tr>
+                              <th>品种</th>
+                              <th>数量</th>
+                              <th>说明</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                                <td><span class="table-pic"><img src="assets/data/garden1.jpg" alt=""></span></td>
+                                <td>1</td>
+                                <td>事实上事实上事实上事实上事实上身上</td>
+                            </tr>
+                            <tr>
+                                <td><span class="table-pic"><img src="assets/data/garden1.jpg" alt=""></span></td>
+                                <td>1</td>
+                                <td>事实上事实上事实上事实上事实上身上</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <form id="exchangeForm">
+                        <div class="date-row">
+                            <input type="checkbox" id="wlq"/><label for="wlq">使用物流券：</label>
+                            <select name="" id="">
+                                <option value="">测试</option>
+                            </select>
+                            <label for="shDate">送货日期：</label>
+                            <input class="Wdate" type="text" onclick="WdatePicker()" id="shDate">
+                          
+                        </div>
+                        <div class="hint-row">采摘入库之后才能进行配送请提前至少三天</div>
+                        <p class="my-count">运费：<i class="total">10.0</i>元</p>
+                        <p class="my-count">支付金额：<i class="total">258.00</i>元</p>
+                        <div class="form-actions">
+                            <button class="yc-btn yc-btn-success btn-rc" type="button" id="exchangeBtn">使用哟币付款</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="yc-footer">
+        <div class="yc-wrapper">
+            <div class="yc-footer-info">
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">关于</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">公司介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">商务合作</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">帮助中心</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">客服中心</a>
+                    </dd>
+                </dl>
+                <dl class="last">
+                    <dt>
+                        <a href="javascript:;" target="_blank">隐私权政策与使用条款</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">隐私权政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">使用条款</a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="yc-qrcode yc-qrcode-weibo">
+                <p class="yc-qrcode-title">官方微博</p>
+                <img src="./assets/images/qrcode-weibo.jpg" alt="">
+            </div>
+            <div class="yc-qrcode yc-qrcode-weixin">
+                <p class="yc-qrcode-title">官方微信</p>
+                <img src="./assets/images/qrcode-weixin.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <script type="text/template" id="address-tmpl">
+        <div class="yc-form-container">
+            <form>
+                <div class="form-group">
+                    <label class="form-label">收货人姓名<span class="corRed">*</span></label>
+                    <input type="text" class="person-name form-input"/>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">所在地区<span class="corRed">*</span></label>
+                    <label class="select-label">省份</label>
+                    <select name="province" id="province">
+                    </select>
+                    <label class="select-label">城市</label>
+                    <select name="city" id="city">
+                    </select>
+                    <label class="select-label">县区</label>
+                    <select name="town" id="town">
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="form-label">详细地址<span class="corRed">*</span></label>
+                    <input type="text" class="form-input detailAddress" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">邮政编码</label>
+                    <input type="text" class="form-input postcode" />
+                </div>
+                <div class="form-group">
+                    <label class="form-label">手机号码</label>
+                    <input type="text" class="form-input tel" />
+                </div>
+                <div class="form-actions">
+                    <button class="yc-btn yc-btn-success yc-btn-add" type="button">保存</button>
+                    <button class="yc-btn" type="button" data-role="close">返回</button>
+                </div>
+            </form>
+        </div>
+    </script>
+    <script>
+        $(function(){
+        // 添加地址
+        var addDialog = null;
+        $(document).on('click','#add-address-btn',function(e){
+            e.preventDefault();
+           showAddressDialog({});
+        });
+
+        $(document).on('click','.edit-btn',function(e){
+            e.preventDefault();
+            var target = $(e.currentTarget);
+            console.log(target.data('name'))
+           showAddressDialog({
+                "name":target.data('name'),
+                "province" : target.data("province"),
+                "city" :target.data("city"),
+                "detailAddress" : target.data("detailaddress"),
+                "telephone" : target.data('tel')
+            });
+        });
+
+        function showAddressDialog(defInfor){
+             addDialog = new QAQ.Dialog({
+                id          : 'address-dialog',//选填dialog的id
+                title       : '管理收货地址',
+                contentSelector     : '#address-tmpl',
+             
+                width       : 600,//选填
+                modal       : false, //是否显示遮罩
+                drag        : false,//是否可拖拽
+                winResize   : false,//浏览器缩放时是否重新定位
+                success :  function(){
+                    if(defInfor){
+                        setInfor($(this.$element),defInfor)
+                    }else{
+                        new Dsy({
+                            // 绑定三个select的id
+                            s:['province','city','town'],
+                            // 是否是大陆
+                            isMainLand:true,
+                            // 默认浙江省
+                            p_key:'浙江省'
+                        });
+                    }
+                }
+            });
+        }
+
+        function setInfor(node,infor){
+            console.log(node)
+            node.find('.person-name').val(infor.name);
+            node.find('.detailAddress').val(infor.detailAddress);
+            node.find('.tel').val(infor.telephone);
+            new Dsy({
+                // 绑定三个select的id
+                s:['province','city','town'],
+                // 是否是大陆
+                isMainLand:true,
+                // 默认浙江省
+                p_key: infor.province
+            });
+        }
+
+        // 加入菜篓
+        $(document).on('click','.yc-btn-add',function(e){
+            alert('成功')
+            addDialog.close();
+        });
+    });
+    </script>
+
+  </body>
+</html>

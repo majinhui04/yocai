@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+    <head lang="zh-CN"> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum- scale=1.0, user-scalable=no" /> 
+    <!-- 这行代码可以指定网页使用 webkit 引擎渲染，当然，只对 360 浏览器 6.5+ 有效 -->
+    <meta name="renderer" content="webkit">
+    <meta name="format-detection" content="telephone=no" /> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>菜地详细</title> 
+    <link rel="shortcut icon" href="./assets/images/icon.jpg" /> 
+    <link rel="icon" href="./assets/images/icon.jpg" />
+    <link rel="stylesheet" href="./assets/css/app.public.css">
+    <link rel="stylesheet" href="./assets/vendor/qaq/css/qaq.css">
+    <link rel="stylesheet" href="./assets/css/app.css" /> 
+    <link rel="stylesheet" href="./assets/css/app.cdxx.css" />  
+    <script src="./assets/vendor/jquery/1.11.1/jquery.min.js"></script> 
+    <script src="./assets/vendor/qaq/js/qaq.js"></script>
+    <script src="./assets/js/app.config.js"></script>
+    <script src="./assets/js/app.global.js"></script>
+ </head> 
+ <body class="yc my-garden-container"> 
+    <!-- 顶部导航 -->
+    <div class="yc-topnav" > 
+        <div class="yc-wrapper ">
+            <div class="yc-topnav-l">
+                <span>欢迎您,<a class="yc-link yc-link-user" href="javascript:;">马饭</a></span>
+                <a class="yc-link yc-inline-b yc-link-usertips" href="javascript:;">
+                    消息
+                    <i class="icon-spot"></i>
+                </a>
+                <a class="yc-link yc-link-logout" href="javascript:;">退出</a>
+            </div>
+            <div class="yc-topnav-r">
+                <a class="yc-link yc-link-basket" href="javascript:;">菜篓(1)</a>
+                <a class="yc-link yc-link-home" href="javascript:;">我的庄园</a>
+                <a class="yc-link" href="javascript:;">手机版</a>
+                <a class="yc-link" href="javascript:;">哟菜市场</a>
+                <a class="yc-link" href="javascript:;">线下门店</a>
+            </div>
+        </div>
+    </div> 
+    <!-- 顶部菜单 -->
+    <div class="yc-header">
+        <div class="yc-wrapper">
+            <div class="yc-logo">
+                <img src="./assets/images/logo.jpg" alt="" class="yc-logo-img">
+            </div>
+            <div class="yc-mainnav">
+                <a href="javascript:;" class="yc-mainnav-item cur" data-role="首页"><span>首页</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="菜园"><span>菜园</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="服务"><span>服务</span></a>
+                <a href="javascript:;" class="yc-mainnav-item" data-role="集市"><span>集市</span></a>
+            </div>
+        </div>
+            
+    </div>
+    
+    <!-- 主体 -->
+    <div class="yc-main yc-wrapper clearfix">
+        <!-- 主体内容 -->
+        <div class="yc-content my-garden-detail yc-column">
+
+            <!-- 菜地列表 -->
+            <div class="my-garden-list">
+                <div class="my-garden-item clearfix">
+                    <div class="my-garden-pics">
+                        <img src="./assets/data/garden1.jpg" alt="">
+                    </div>
+                    <div class="my-garden-info">
+                        <h4>我的私人菜园1 <a href="javascript:;" class="update-btn" id="editName">修改名称</a></h4>
+                        <p class="pz">品种：白菜</p>
+                        <p class="zt">状态：茁壮成长</p>
+                        <p>菜园位置：武汉市XXXXXXXXX那湖新村工业大院东方一组</p>
+                        <div class="my-garden-actions">
+                            <a href="javascript:;" class="yc-btn garden-btn-do">自己动手</a>
+                            <a href="javascript:;" class="yc-btn garden-btn-servce yc-btn-success">农技师服务</a>
+                        </div>
+                    </div>
+                    <div class="my-garden-info2">
+                        <p class="date-row">申请时间：2015-02-14  15：13</p>
+                        <p class="date-row">最新动态时间：2015-02-14  15：13</p>
+                        <p>菜地编号：23424</p>
+                        <p>菜园编号：123424</p>
+                        <p>菜园编号尾号：123324</p>
+                        <p>预计成熟：sdf</p>
+                        <p>预计收获：sdf</p>
+                        <p>剩余数量：123</p>
+                    </div>
+                </div>
+                <div class="my-garden-pic-list clearfix">
+                    <div class="left-box">
+                        <h4><span class="line-icon"></span>生长初期</h4>
+                        <p>成熟期</p>
+                        <p>收获期</p>
+                    </div>
+                    <div class="right-box">
+                        <div class="photo-list-item clearfix">
+                            <div class="photo-box clearfix">
+                                <div class="round"></div>
+                                <div class="pointer"></div>
+                                <div class="info-icon">成长初期</div>
+                                <div class="photo-box-content">
+                                    <h4><strong>翻耕</strong>1014年9月24</h4>
+                                    <div class="pic"><img src="assets/data/garden1.jpg" /></div>
+                                </div>
+                            </div>
+                            <span class="line-row"></span>
+                            <div class="big-photo-box">
+                                <img src="assets/data/garden1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="photo-list-item clearfix">
+                            <div class="photo-box clearfix">
+                                <div class="round"></div>
+                                <div class="pointer"></div>
+                                <div class="photo-box-content">
+                                    <h4><strong>翻耕</strong>1014年9月24</h4>
+                                    <div class="pic"><img src="assets/data/garden1.jpg" /></div>
+                                </div>
+                            </div>
+                            <span class="line-row"></span>
+                            <div class="big-photo-box">
+                                <img src="assets/data/garden1.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="photo-list-item clearfix">
+                            <div class="photo-box clearfix">
+                                <div class="round"></div>
+                                <div class="pointer"></div>
+                                <div class="info-icon">成长后期</div>
+                                <div class="photo-box-content">
+                                    <h4><strong>翻耕</strong>1014年9月24</h4>
+                                    <div class="pic"><img src="assets/data/garden1.jpg" /></div>
+                                </div>
+                            </div>
+                            <span class="line-row"></span>
+                            <div class="big-photo-box">
+                                <img src="assets/data/garden1.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 底部版权 -->
+    <div class="yc-footer">
+        <div class="yc-wrapper">
+            <div class="yc-footer-info">
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">关于</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">公司介绍</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">商务合作</a>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>
+                        <a href="javascript:;" target="_blank">帮助中心</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">常见问题</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">客服中心</a>
+                    </dd>
+                </dl>
+                <dl class="last">
+                    <dt>
+                        <a href="javascript:;" target="_blank">隐私权政策与使用条款</a>
+                    </dt>
+                    <dd>
+                        <a href="javascript:;" target="_blank">隐私权政策</a>
+                    </dd>
+                    <dd>
+                        <a href="javascript:;" target="_blank">使用条款</a>
+                    </dd>
+                </dl>
+            </div>
+
+            <div class="yc-qrcode yc-qrcode-weibo">
+                <p class="yc-qrcode-title">官方微博</p>
+                <img src="./assets/images/qrcode-weibo.jpg" alt="">
+            </div>
+            <div class="yc-qrcode yc-qrcode-weixin">
+                <p class="yc-qrcode-title">官方微信</p>
+                <img src="./assets/images/qrcode-weixin.jpg" alt="">
+            </div>
+        </div>
+
+    </div>
+    <!-- 模板 -->
+    <script type="text/template" id="tmpl">
+        <div class="yc-form-container">
+            <form>
+            <div style="margin:10px;"><input type="text" ></div>
+                <div class="form-actions">
+                    <button class="yc-btn yc-btn-success yc-btn-add" type="button" data-role="close" id="submitBtn" >确定</button>
+                    <button class="yc-btn" type="button" data-role="close">取消</button>
+                </div>
+            </form>
+        </div>
+    </script>
+    <script>
+    $(function(){
+        
+        var Dialog = null;
+        $(document).on('click','#editName',function(e){
+
+            e.preventDefault();
+            Dialog = new QAQ.Dialog({
+                id          : 'dialog1',//选填dialog的id
+                title       : '修改',
+                contentSelector     : '#tmpl',
+             
+                width       : 320,//选填
+                modal       : false, //是否显示遮罩
+                drag        : false,//是否可拖拽
+                winResize   : false,//浏览器缩放时是否重新定位,
+
+                success:function(){
+                    
+                    
+                }
+            });
+
+
+            
+        });
+
+        // 昵称提交
+        $(document).on('click','#submitBtn',function(e){
+            
+        });
+
+    });
+
+    </script>
+
+  </body>
+</html>

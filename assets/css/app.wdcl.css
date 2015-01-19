@@ -1,0 +1,14 @@
+/*------我的菜篓------*/
+.btn-rc{float: right;}
+.corRed{color: #fc4605;}
+.corGreen{color: #9acd44;}
+.my-person-item{padding:20px 30px;overflow: hidden;}
+.yc-column{float: none;width: 100%;}
+.table-pic{display: inline-block;width: 60px;height: 60px;overflow: hidden;margin-left: 10px;}
+.table-pic img{width: 100%;height: 100%;}
+.table-ckbox{vertical-align: top;}
+.table-num{width: 40px;}
+.my-count{text-align: right;margin-bottom: 20px;}
+.my-count span{color: #6cae40;margin-right: 20px;}
+.my-count i{font-style: normal;}
+.my-count .total{font-size: 16px;color: #fd1c00;font-weight: bold;}
